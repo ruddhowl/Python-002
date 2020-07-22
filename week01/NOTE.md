@@ -1,1 +1,15 @@
 学习笔记
+python爬虫相关的库
+requests：获取网页（python自带的urllib库步骤较为繁琐，所以通常使用第三方requests库来获取网页资源）
+BeautifulSoup：解析网页内容
+lxml.etree：把html格式当作xml来解析，用xpath来匹配网页中的元素
+
+python爬虫框架scrapy
+
+两个python的独特语法
+yield与推导式
+yield：
+可以简单理解为一种特殊的return方法
+yield返回一个生成器对象，可以逐个的选择其中的元素，也可以直接将其转化成list对象
+推导式：
+一种具有python特点的优雅的初始化语法
