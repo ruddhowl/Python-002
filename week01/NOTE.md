@@ -10,9 +10,9 @@ lxml.etree：把html格式当作xml来解析，用xpath来匹配网页中的元�
 
 所谓框架，就是一个半成品，辅助你完成开发的利器。
 
-##### scrapy组件：
+##### scrapy数据流：
 
-[https://docs.scrapy.org/en/latest/_images/scrapy_architecture_02.png]: https://docs.scrapy.org/en/latest/_images/scrapy_architecture_02.png	"数据流"
+##### https://docs.scrapy.org/en/latest/_images/scrapy_architecture_02.png
 
 ##### scrapy开发的一般流程：
 
