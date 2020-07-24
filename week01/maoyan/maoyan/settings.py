@@ -31,7 +31,8 @@ import random
 USER_AGENT = random.choice(USER_AGENT_LIST)
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# Default True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
