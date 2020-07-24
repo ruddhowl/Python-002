@@ -3,7 +3,9 @@
 ## python爬虫相关的库
 
 requests：获取网页（python自带的urllib库步骤较为繁琐，所以通常使用第三方requests库来获取网页资源）
+
 BeautifulSoup：解析网页内容
+
 lxml.etree：把html格式当作xml来解析，用xpath来匹配网页中的元素
 
 ## python爬虫框架scrapy
@@ -12,7 +14,7 @@ lxml.etree：把html格式当作xml来解析，用xpath来匹配网页中的元�
 
 ##### scrapy数据流：
 
-##### https://docs.scrapy.org/en/latest/_images/scrapy_architecture_02.png
+https://docs.scrapy.org/en/latest/topics/architecture.html
 
 ##### scrapy开发的一般流程：
 
@@ -29,8 +31,8 @@ scrapy genspider example example.com # 创建爬虫
 ```python
 class ExampleSpider(scrapy.Spider):
 	name = "example"
-    allowed_domains = {"example.com"}
-    start_urls = {"https://www.example.com/"}
+	allowed_domains = {"example.com"}
+	start_urls = {"https://www.example.com/"}
 ```
 
 scrapy crawl example # 启动爬虫
@@ -47,7 +49,7 @@ yield与推导式
 
 yield：
 
-可以简单理解为一种特殊的return方法
+初学时可以简单理解为一种特殊的return方式
 
 yield返回一个生成器对象，可以逐个的选择其中的元素，也可以直接将其转化成list对象
 
@@ -57,4 +59,4 @@ yield返回一个生成器对象，可以逐个的选择其中的元素，也可
 
 一种具有python特点的优雅的初始化语法
 
-特殊：元组推导式，需要用tuple()类型转化
+特殊：元组推导式，需要用tuple()进行类型转化
