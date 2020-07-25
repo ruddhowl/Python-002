@@ -19,6 +19,8 @@ class MovieSpider(scrapy.Spider):
         # selector = Selector(response = response).xpath('//*[@id="app"]/div/div[2]/div[2]/dl')
         # selector = Selector(response = response)
         selector = etree.HTML(response.text.replace("<dd>", "</dd><dd>"))
+        # 这里直接取selector对象返回的列表当中我们需要的元素
+        # 用strip函数去除字符串两端的无效字符
         for i in range(1, 11):
             print('Running movie.py')
             # 电影名称
