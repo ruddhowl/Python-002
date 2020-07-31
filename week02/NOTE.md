@@ -82,3 +82,11 @@ with open("python.pdf", "wb") as pdf:
             pdf.write(chunk)
 ```
 
+
+
+### 分布式爬虫
+
+使用scrapy_redis构建分布式爬虫
+
+scrapy_redis是一个Python库，可以将redis作为多个scrapy爬虫的一个共享队列。
+

@@ -46,7 +46,7 @@ class MaoyanSpider(scrapy.Spider):
                                            # //*[@id="app"]/div/div[2]/div[2]/dl/dd[2]/div[1]/div[2]/a/div/div[1]/span
                 item['name'] = selector.xpath(f'./div[1]/span/text()')[0].extract()
                 # 电影类型
-                item['type'] = selector.xpath(f'./div[2]/text()')[1].extract().strip()
+                item['tp'] = selector.xpath(f'./div[2]/text()')[1].extract().strip()
                 # 上映时间
                 item['release'] = selector.xpath(f'./div[4]/text()')[1].extract().strip()
                 yield item 

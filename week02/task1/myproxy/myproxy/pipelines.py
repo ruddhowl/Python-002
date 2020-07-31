@@ -12,9 +12,9 @@ class MyproxyPipeline:
         print('Init MyproxyPipeline')
     def process_item(self, item, spider):
         name = item['name']
-        type = item['type']
+        tp = item['tp']
         release = item['release']
-        sql = f"insert into movie values ('{name}','{type}','{release}')"
+        sql = f"insert into movie values ('{name}','{tp}','{release}')"
 
         try:
             cur = m.conn.cursor()
