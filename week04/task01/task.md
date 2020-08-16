@@ -1,11 +1,19 @@
 1. SELECT * FROM data;
+
 data
+
 2. SELECT * FROM data LIMIT 10;
+
 data.head(10)
+
 3. SELECT id FROM data;  //id 是 data 表的特定一列
+
 data.loc('id')
+
 4. SELECT COUNT(id) FROM data;
+
 data.groupby('id).agg([np.count])
+
 5. SELECT * FROM data WHERE id<1000 AND age>30;
 
 6. SELECT id,COUNT(DISTINCT order_id) FROM table1 GROUP BY id;
