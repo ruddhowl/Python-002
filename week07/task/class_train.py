@@ -35,8 +35,21 @@ class Cat(Animal):
         self.name = name    
         super().__init__(kind, size, character)
 
+    def is_pet(self):
+        if self.is_ferocious is not '凶猛':
+            return True
+        return False
+
 class Dog(Animal):
     sound = 'wang'
+    def __init__(self, name, kind, size, character):
+        self.name = name    
+        super().__init__(kind, size, character)
+
+    def is_pet(self):
+        if self.is_ferocious is not '凶猛':
+            return True
+        return False
 
 if __name__ == '__main__':
     # 实例化动物园
