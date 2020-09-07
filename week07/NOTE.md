@@ -24,3 +24,15 @@
 - 静态方法  由类调用，无参数
 
 三种方法在内存中都属于类所占的内存空间
+
+Python中总共包括三个内置装饰器：
+
+① staticmethod
+
+② classmethod
+
+③ property
+
+property属性函数
+
+装饰器@property，用调用属性的方式来调用一个方法

@@ -47,6 +47,7 @@ class Dog(Animal):
         self.name = name    
         super().__init__(kind, size, character)
 
+    @property
     def is_pet(self):
         if self.is_ferocious is not '凶猛':
             return True
