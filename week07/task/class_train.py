@@ -5,7 +5,7 @@ class Zoo(object):
         self.animals = {}
         self.name = name
 
-    def add_animal(self, animal):
+    def add_animal(self, animal): # 不怎么会，先放着
         for ani in self.animals:
             if ani == animal:
                 return None
@@ -24,7 +24,7 @@ class Animal(metaclass = abc.ABCMeta):
 
     @property
     def is_ferocious(self):
-        if self.sizes[self.size] >= self.sizes['medium'] and self.kind == '食肉' and self.character == '凶猛':
+        if self.sizes[self.size] >= self.sizes['中'] and self.kind == '食肉' and self.character == '凶猛':
             return True
         else:
             return False
@@ -35,6 +35,7 @@ class Cat(Animal):
         self.name = name    
         super().__init__(kind, size, character)
 
+    @property
     def is_pet(self):
         if self.is_ferocious is not '凶猛':
             return True
@@ -56,10 +57,10 @@ if __name__ == '__main__':
     z = Zoo('时间动物园')
     # 实例化一只猫，属性包括名字、类型、体型、性格
     cat1 = Cat('大花猫 1', '食肉', '小', '温顺')
-    print(f'猫的叫声：{Cat.sound}，猫的名字：{cat1.name}，猫的体型：{cat1.size}，猫的性格：{cat1.character}')
+    print(f'猫的叫声：{Cat.sound}，猫的名字：{cat1.name}，猫的体型：{cat1.size}，猫的性格：{cat1.character}，是否适合作为宠物：{cat1.is_pet}')
     # 增加一只猫到动物园
-    z.add_animal(cat1)
+    # z.add_animal(cat1)
     # 动物园是否有猫这种动物
-    have_cat = hasattr(z, 'Cat')
-    print(f'{have_cat}')
+    # have_cat = hasattr(z, 'Cat')
+    # print(f'{have_cat}')
  
